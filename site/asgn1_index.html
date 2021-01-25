@@ -1,170 +1,42 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Module 2 Permina</title>
-    <style>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
 
-      * {
-        box-sizing: border-box;
-      }
+</style>
+</head>
+<body>
+<h1> Our Menu </h1>
 
-      @media only screen and (min-width: 992px) {
-        /* For desktop: */
-        .chicken {
-            width: 30%;
-            height: 250px;
-            background-color: LightBlue;
-            overflow: hidden;
-            position: absolute;
-            border: 1px solid black;
-            margin: 2px;
-            padding: 3px;
-        }
-        .beef {
-            width: 30%;
-            height: 250px;
-            background-color: LightBlue;
-            overflow: hidden;
-            border: 1px solid black;
-            position: relative;
-            left: 333px;
-            margin: 10px;
-            padding: 3px;
-            top:2px;
-        }
-        .sushi {
-          width: 30%;
-          height: 250px;
-          background-color: LightBlue;
-          overflow: hidden;
-          border: 1px solid black;
-          position: absolute;
-          left: 680px;
-          top: 72px;
-          margin: 10px;
-          padding: 3px;
-        }
-      }
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-9">
+<div class="headers"> Chicken </div>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use
+    Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-9">
+    <div class="headers"> Beef</div>
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+    making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+    obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+    discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+    (The Extremes of Good and Evil) by Cicero
+  </div>
+  <div class="col-lg-4 col-md-9 col-sm-9">
+<div class="headers"> Sushi</div>
 
+The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'.[1][2] The physical source
+may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks
+off on page 34 with "Neque porro quisquam est qui do-" and continues on
+page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.[3]
+  </div>
 
-@media only screen and (min-width 768px) and (max-width 991px) {
-    /* For tablet: was 330 per element, height: 250px; */
-  .chicken {
-      width: 50;
-
-      background-color: LightBlue;
-      overflow: hidden;
-      position: absolute;
-      border: 1px solid black;
-      margin: 2px;
-      padding: 3px;
-  }
-  .beef {
-      width: 50%;
-
-      background-color: LightBlue;
-      overflow: hidden;
-      border: 1px solid black;
-      position: relative;
-      left: 333px;
-      margin: 10px;
-      padding: 3px;
-      top:2px;
-  }
-  .sushi {
-    width: 100%;
-
-    background-color: LightBlue;
-    overflow: hidden;
-    border: 1px solid black;
-    position: relative;
-
-    margin: 10px;
-    padding: 3px;
-  }
-      }
-
-      @media only screen and (max-width 767px) {
-          /* For mobile: */
-        .chicken {
-            width: 330px;
-            height: 250px;
-            background-color: LightBlue;
-            overflow: hidden;
-            position: absolute;
-            border: 1px solid black;
-            margin: 2px;
-            padding: 3px;
-        }
-        .beef {
-            width: 330px;
-            height: 250px;
-            background-color: LightBlue;
-            overflow: hidden;
-            position: relative;
-            border: 1px solid black;
-            margin: 2px;
-            padding: 3px;
-        }
-        .sushi {
-          width: 330px;
-          height: 250px;
-          background-color: LightBlue;
-          overflow: hidden;
-          border: 1px solid black;
-          position: relative;
-          border: 1px solid black;
-          margin: 2px;
-          padding: 3px;
-        }
-            }
-
-.headers{
-  position: relative;
-  float: right;
-  right: 1px;
-  background-color: Orange;
-  overflow: hidden;
-   padding: 5px;
-   margin: 5px;
-border: 1px solid black;
-}
-
-h1 {
-  text-align: center;
-}
-.footer{
-  background-color: #0099cc;
-color: #ffffff;
-text-align: center;
-font-size: 12px;
-padding: 15px;
-}
-
-    </style>
-  </head>
-  <body>
-    <h1> Our menu </h1>
-    <div class="chicken">
-          <div class="headers"> Chicken </div>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-         </div>
-
-         <div class="beef">
-               <div class="headers"> Beef</div>
-               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-              </div>
-
-                       <div class="sushi">
-                             <div class="headers"> Sushi</div>
-                             The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'.[1][2] The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.[3]
-                            </div>
-
-  <div class="footer">
-  <p>Resize the browser window to see how the content respond to the resizing.</p>
 </div>
-  </body>
+
+</body>
 </html>
