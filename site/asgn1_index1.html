@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.footer{
+  background-color: #0099cc;
+color: #ffffff;
+text-align: center;
+font-size: 12px;
+padding: 15px;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #A52A2A;
+  height: 150px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+.headers{
+  position: relative;
+  float: right;
+  right: 1px;
+  background-color: Orange;
+  overflow: hidden;
+   padding: 5px;
+   margin: 5px;
+border: 1px solid black;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 1px solid green;
+    margin-left: 2px;
+    background-color: DodgerBlue;
+    height: 200px;
+  }
+
+  .col-lg-4 {
+    width: 33%;
+
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid green;
+
+    margin-top: 2px;
+    background-color: #A52A2A;
+    height: 200px;
+    overflow: scroll;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/********** Small devices only **********/
+@media  (max-width: 991px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+    border: 1px solid green;
+    background-color: Yellow;
+    height: auto;
+    margin-top: 2px;
+  }
+
+  .col-sm-9 {
+    width: 74.99%;
+  }
+}
+</style>
+</head>
+<body>
+<h1> Our Menu </h1>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-9">
+<div class="headers"> Chicken </div>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use
+    Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-9">
+    <div class="headers"> Beef</div>
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+    making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more
+    obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+    discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+    (The Extremes of Good and Evil) by Cicero
+  </div>
+  <div class="col-lg-4 col-md-9 col-sm-9">
+<div class="headers"> Sushi</div>
+
+The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'.[1][2] The physical source
+may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks
+off on page 34 with "Neque porro quisquam est qui do-" and continues on
+page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.[3]
+  </div>
+
+</div>
+
+</body>
+</html>
